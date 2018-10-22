@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <title>Demo</title>
+</head>
+
+<body>
+
+
+    <h1>Based-List Navbar V1.1.0</h1>
+    <h4>URL Expand</h4>
+    <span>========== v1.1.0-origin ============</span>
+    <ul>
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <br><br>
+
+    <h6>navbar applied</h6>
+    <ul class="navbar">
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <h6>then remove bulllet points</h6>
+    <ul class="navbar navbar-nav">
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <span>========== v1.1.1 ============</span>
+    <h6>navbar-nav flex-direction=column default, so need to verticalize the navbar</h6>
+    <h6>so it comes <span class="text-warning"> --V1.1.1</span></h6>
+    <ul class="navbar navbar-nav flex-row text-warning">
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <h6>more resposive</h6>
+    <ul class="navbar navbar-nav flex-row navbar-expand-sm">
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <h6>flex-row looks likes not that fit in this situation.</h6>
+    <h6>more resposive</h6>
+    <ul class="navbar navbar-nav navbar-expand-sm">
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+
+
+    <span>========== v1.2.0 ============</span>
+    <h6>A different beginning</h6>
+    <ul class="navbar-nav">
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+
+    <h6>Vertical ------ Horizontal and more responsive</h6>
+    <span>========== v1.2.1 ============</span>
+    <ul class="navbar-nav navbar-expand-sm">
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <br>
+    <h6>so we need a collapsed visual, that's toggler's job</h6>
+    <ul id="navID2" class="navbar-nav navbar-expand-sm collapse navbar-collapse navbar-toggler" data-toggle="collapse"
+        data-target="#navID2">
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <br>
+    <br>
+
+
+
+    <h6>so we need to resolve the responsibility</h6>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navID2">Icon</button>
+    <ul id="navID2" class="navbar-nav navbar-expand-sm collapse navbar-collapse">
+        <li>Home</li>
+        <li>Features</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <br>
+    <h6>navbar-nav's priority is higher than navbar-collapse</h6>
+    <br>
+
+
+    <h5>======== v1.2.2 =========</h5>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navID2">Icon</button>
+    <div class="collapse navbar-collapse navbar-expand-sm ">
+        <ul id="navID2" class="navbar-nav">
+            <li>Home</li>
+            <li>Features</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <h1 class="text-success">=== success v1.2.3 ===</h1>
+    <div class="navbar-expand-sm text-success">
+        <button class="navbar-toggler text-success" data-toggle="collapse" data-target="#navID2">Icon</button>
+        <div class="collapse navbar-collapse">
+            <ul id="navID2" class="navbar-nav">
+                <li>Home</li>
+                <li>Features</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <h6>Collapse To right --- with flex-row-reverse</h6>
+    <div class="navbar-expand-sm">
+        <button class="navbar-toggler flex-row-reverse" data-toggle="collapse" data-target="#navID2">Icon</button>
+        <div class="collapse navbar-collapse">
+            <ul id="navID2" class="navbar-nav">
+                <li>Home</li>
+                <li>Features</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <h6>Collapse To right -- get flex with navbar</h6>
+    <div class="navbar navbar-expand-sm">
+        <button class="navbar-toggler flex-row-reverse" data-toggle="collapse" data-target="#navID2">Icon</button>
+        <div class="collapse navbar-collapse">
+            <ul id="navID2" class="navbar-nav">
+                <li>Home</li>
+                <li>Features</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <h6>push it To right in flex mode</h6>
+    <h1 class="text-success">==== V1.2.4 ====</h1>
+    <div class="navbar navbar-expand-sm text-success">
+        <a href="#"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navID2">Icon</button>
+        <div class="collapse navbar-collapse">
+            <ul id="navID2" class="navbar-nav">
+                <li>Home</li>
+                <li>Features</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    -
+
+
+    <h4>LIBs Toggleable</h4>
+    <h6>====== v2.1.1 ========</h6>
+    <ul class="navbar-nav navbar-toggleable-sm">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">About</li>
+        <li class="nav-item">Services</li>
+    </ul>
+    <br>
+    <br>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navId">Icon</button>
+    <ul id="navId" class="navbar-nav navbar-toggleable-sm collapse navbar-collapse">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">About</li>
+        <li class="nav-item">Services</li>
+    </ul>
+    <h6>navbar's flex is higher than collapse's flex properties</h6>
+    <br>
+    <br>
+
+    <h1 class="text-success">=== success v2.1.1 ===</h1>
+    <div class="navbar-toggleable-sm ">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navId">Icon</button>
+        <div class="collapse navbar-collapse">
+            <ul id="navId" class="navbar-nav ">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Services</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+LESSONES
+Nav
+* a class selector, not that element tag, so the business is the class selector.
+* put  
+
+
+nav-fill vs nav-link
+* nav-fill only effect on nav-item.
